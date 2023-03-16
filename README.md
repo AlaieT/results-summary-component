@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AlaieT/results-summary-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/AlaieT/results-summary-component)
+- Live Site URL: [List-site](https://your-live-site-url.com)
 
 ## My process
 
@@ -45,4 +45,4 @@ Users should be able to:
 ## Author
 
 - Website - [GitHub](https://github.com/AlaieT)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/AlaieT)
+- Frontend Mentor - [AlaieT](https://www.frontendmentor.io/profile/AlaieT)
