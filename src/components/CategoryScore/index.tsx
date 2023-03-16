@@ -1,5 +1,10 @@
 import React from "react";
 
+import IconReaction from "../../../public/images/icon-reaction.svg";
+import IconMemory from "../../../public/images/icon-memory.svg";
+import IconVerbal from "../../../public/images/icon-verbal.svg";
+import IconVisual from "../../../public/images/icon-visual.svg";
+
 import styles from "../../styles/components/categoryScore.module.scss";
 
 interface CategoryScoreProps {
@@ -8,10 +13,10 @@ interface CategoryScoreProps {
 }
 
 const ICONS = {
-  Reaction: "/images/icon-reaction.svg",
-  Memory: "/images/icon-memory.svg",
-  Verbal: "/images/icon-verbal.svg",
-  Visual: "/images/icon-visual.svg",
+  Reaction: IconReaction,
+  Memory: IconMemory,
+  Verbal: IconVerbal,
+  Visual: IconVisual,
 };
 
 const CategoryScore = ({ category, score }: CategoryScoreProps) => {
