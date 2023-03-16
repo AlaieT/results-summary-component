@@ -1,0 +1,42 @@
+/**Colors*/
+$reaction-background-color: hsla(0, 100%, 67%, 0.05);
+$memory-background-color: hsla(39, 100%, 56%, 0.05);
+$verbal-background-color: hsla(166, 100%, 37%, 0.05);
+$visual-background-color: hsla(234, 85%, 45%, 0.05);
+$gradient-background: linear-gradient(
+  0deg,
+  rgba(46, 43, 233, 1) 0%,
+  rgba(120, 87, 255, 1) 100%
+);
+$gradient-background-circle: linear-gradient(
+  180deg,
+  hsla(256, 72%, 46%, 1) 0%,
+  hsla(241, 72%, 46%, 0) 100%
+);
+$prime-text-color: hsl(0, 0%, 100%);
+$second-text-color: hsl(241, 100%, 89%);
+$summary-color: hsl(224, 30%, 27%);
+$summary-opacity-color: hsla(224, 30%, 27%, 0.5);
+$reaction-color: hsl(0, 100%, 67%);
+$memory-color: hsl(39, 100%, 56%);
+$verbal-color: hsl(166, 100%, 37%);
+$visual-color: hsl(234, 85%, 45%);
+
+/**Font-sizes*/
+
+$prime-font-size: 18px;
+$prime-font-size-h1: 24px;
+$prime-font-size-h2: 32px;
+$prime-font-score: 78px;
+
+$media-font-size-h1: 18px;
+$media-font-size-h2: 24px;
+$media-font-score: 54px;
+$media-font-paragraph: 16px;
+
+/**Shadows*/
+$prime-shadow: 10px 10px 20px 5px hsla(234, 85%, 45%, 0.05);
+
+/**Media*/
+
+$mobile: 780px;

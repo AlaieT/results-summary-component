@@ -1,0 +1,60 @@
+@import "../utils/vairables.scss";
+@import "../utils/mixins.scss";
+
+.container {
+  width: 288px;
+  height: 56px;
+  padding: 16px;
+
+  @include flex("space-between&center", "");
+
+  border-radius: 12px;
+
+  &.Reaction {
+    color: $reaction-color;
+
+    background: $reaction-background-color;
+  }
+
+  &.Memory {
+    color: $memory-color;
+
+    background: $memory-background-color;
+  }
+
+  &.Verbal {
+    color: $verbal-color;
+
+    background: $verbal-background-color;
+  }
+
+  &.Visual {
+    color: $visual-color;
+
+    background: $visual-background-color;
+  }
+
+  & .category {
+    @include flex("center&center", "");
+
+    & img {
+      margin-right: 12px;
+    }
+  }
+
+  & .score {
+    color: $summary-color;
+    font-weight: 500;
+
+    & span {
+      color: $summary-opacity-color;
+      font-weight: normal;
+    }
+  }
+}
+
+.container {
+  @media screen and (max-width: $mobile) {
+    width: 315px;
+  }
+}
