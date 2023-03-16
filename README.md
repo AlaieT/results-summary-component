@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/AlaieT/results-summary-component)
-- Live Site URL: [List-site](https://your-live-site-url.com)
+- Live Site URL: [List-site](https://alaiet.github.io/results-summary-component/)
 
 ## My process
 
