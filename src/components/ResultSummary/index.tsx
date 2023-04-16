@@ -1,14 +1,11 @@
 import React, { useMemo } from "react";
 
-import CategoryScore, { CategoryScoreProps } from "../CategoryScore";
+import CategoryScore from "../CategoryScore";
 import Button from "../Button";
 
-import styles from "../../styles/components/resultSummary.module.scss";
+import type { ResultSummaryProps } from "../../types";
 
-interface ResultSummaryProps {
-  categoryScore: CategoryScoreProps[];
-  bestOf: number;
-}
+import styles from "../../styles/components/resultSummary.module.scss";
 
 const ResultSummary = ({ categoryScore, bestOf }: ResultSummaryProps) => {
   const score = useMemo<number>(
@@ -49,5 +46,4 @@ const ResultSummary = ({ categoryScore, bestOf }: ResultSummaryProps) => {
   );
 };
 
-export type { ResultSummaryProps };
 export default ResultSummary;

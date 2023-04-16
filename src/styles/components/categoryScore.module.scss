@@ -1,5 +1,5 @@
-@import "../utils/vairables.scss";
-@import "../utils/mixins.scss";
+@import "../utils/variables";
+@import "../utils/mixins";
 
 .container {
   width: 288px;
@@ -12,32 +12,28 @@
 
   &.Reaction {
     color: $reaction-color;
-
     background: $reaction-background-color;
   }
 
   &.Memory {
     color: $memory-color;
-
     background: $memory-background-color;
   }
 
   &.Verbal {
     color: $verbal-color;
-
     background: $verbal-background-color;
   }
 
   &.Visual {
     color: $visual-color;
-
     background: $visual-background-color;
   }
 
   & .category {
     @include flex("center&center", "");
 
-    & img {
+    & svg {
       margin-right: 12px;
     }
   }
@@ -53,8 +49,8 @@
   }
 }
 
-.container {
-  @media screen and (max-width: $mobile) {
+@media screen and (max-width: $mobile) {
+  .container {
     width: 315px;
   }
 }

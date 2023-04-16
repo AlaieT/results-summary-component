@@ -1,34 +1,26 @@
 import React from "react";
 
-import IconReaction from "../../../public/images/icon-reaction.svg";
-import IconMemory from "../../../public/images/icon-memory.svg";
-import IconVerbal from "../../../public/images/icon-verbal.svg";
-import IconVisual from "../../../public/images/icon-visual.svg";
+import type { CategoryScoreProps } from "../../types";
+
+import { ReactComponent as IconReaction } from "../../assets/images/icon-reaction.svg";
+import { ReactComponent as IconMemory } from "../../assets/images/icon-memory.svg";
+import { ReactComponent as IconVerbal } from "../../assets/images/icon-verbal.svg";
+import { ReactComponent as IconVisual } from "../../assets/images/icon-visual.svg";
 
 import styles from "../../styles/components/categoryScore.module.scss";
 
-interface CategoryScoreProps {
-  category: "Reaction" | "Memory" | "Verbal" | "Visual";
-  score: number;
-}
-
 const ICONS = {
-  Reaction: IconReaction,
-  Memory: IconMemory,
-  Verbal: IconVerbal,
-  Visual: IconVisual,
+  Reaction: <IconReaction width={24} height={24} />,
+  Memory: <IconMemory width={24} height={24} />,
+  Verbal: <IconVerbal width={24} height={24} />,
+  Visual: <IconVisual width={24} height={24} />,
 };
 
 const CategoryScore = ({ category, score }: CategoryScoreProps) => {
   return (
     <div className={styles.container + " " + styles[category]}>
       <div className={styles.category}>
-        <img
-          src={ICONS[category]}
-          width={24}
-          height={24}
-          alt={"icon-" + category}
-        />
+        {ICONS[category]}
         {category}
       </div>
       <div className={styles.score}>
@@ -39,5 +31,4 @@ const CategoryScore = ({ category, score }: CategoryScoreProps) => {
   );
 };
 
-export type { CategoryScoreProps };
 export default CategoryScore;

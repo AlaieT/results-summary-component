@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button correct render should match snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="button"
+  />
+</DocumentFragment>
+`;

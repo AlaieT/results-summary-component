@@ -1,17 +1,13 @@
-@import "../utils/vairables.scss";
-@import "../utils/mixins.scss";
+@import "../utils/variables";
+@import "../utils/mixins";
 
 .button {
   cursor: pointer;
-
   width: 288px;
   height: 56px;
-
   color: $prime-text-color;
   font-size: $prime-font-size;
-
   background: $summary-color;
-
   border: none;
   border-radius: 28px;
 
@@ -22,8 +18,8 @@
   @include flex("center&center", "");
 }
 
-.button {
-  @media screen and (max-width: $mobile) {
+@media screen and (max-width: $mobile) {
+  .button {
     width: 315px;
   }
 }

@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultSummary correct render should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    id="container"
+  >
+    <div
+      id="result"
+    >
+      <h1>
+        Your result
+      </h1>
+      <div
+        id="score"
+      >
+        46
+        <span>
+          of 100
+        </span>
+      </div>
+      <h2>
+        Great
+      </h2>
+      <p>
+        Your score higher then 100% of the people who have taken these tests.
+      </p>
+    </div>
+    <div
+      id="summary"
+    >
+      <h1>
+        Summary
+      </h1>
+      <ul>
+        <li>
+          <div
+            class="container Memory"
+          >
+            <div
+              class="category"
+            >
+              <div
+                height="24"
+                width="24"
+              />
+              Memory
+            </div>
+            <div
+              class="score"
+            >
+              55
+              <span>
+                 / 100
+              </span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="container Reaction"
+          >
+            <div
+              class="category"
+            >
+              <div
+                height="24"
+                width="24"
+              />
+              Reaction
+            </div>
+            <div
+              class="score"
+            >
+              59
+              <span>
+                 / 100
+              </span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="container Verbal"
+          >
+            <div
+              class="category"
+            >
+              <div
+                height="24"
+                width="24"
+              />
+              Verbal
+            </div>
+            <div
+              class="score"
+            >
+              27
+              <span>
+                 / 100
+              </span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="container Visual"
+          >
+            <div
+              class="category"
+            >
+              <div
+                height="24"
+                width="24"
+              />
+              Visual
+            </div>
+            <div
+              class="score"
+            >
+              43
+              <span>
+                 / 100
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button
+        class="button"
+      >
+        Continue
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

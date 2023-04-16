@@ -1,22 +1,22 @@
 @mixin flex($param, $type) {
   display: flex;
 
-  @if ($param == "center&center") {
+  @if  $param == "center&center" {
     justify-content: center;
     align-items: center;
   }
 
-  @if ($param == "start&center") {
+  @if  $param == "start&center" {
     justify-content: flex-start;
     align-items: center;
   }
 
-  @if ($param == "space-between&center") {
+  @if  $param == "space-between&center" {
     justify-content: space-between;
     align-items: center;
   }
 
-  @if ($type== "col") {
+  @if  $type== "col" {
     flex-direction: column;
   }
 }

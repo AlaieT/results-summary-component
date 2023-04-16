@@ -1,27 +1,22 @@
-@import "../utils/vairables.scss";
-@import "../utils/mixins.scss";
+@import "../utils/variables";
+@import "../utils/mixins";
 
 #container {
   border-radius: 28px;
-
   box-shadow: $prime-shadow;
 
   @include flex("", "");
 
   & #result {
     padding: 42px 58px;
-
     background: $gradient-background;
-
     text-align: center;
-
     border-radius: 28px;
 
     @include flex("start&center", "col");
 
     & h1 {
       margin-bottom: 32px;
-
       color: $second-text-color;
       font-size: $prime-font-size-h1;
       font-weight: 500;
@@ -29,14 +24,12 @@
 
     & h2 {
       margin-bottom: 16px;
-
       font-size: $prime-font-size-h2;
       font-weight: 600;
     }
 
     & p:last-child {
       max-width: 254px;
-
       color: $second-text-color;
     }
 
@@ -44,11 +37,8 @@
       width: 200px;
       height: 200px;
       margin-bottom: 32px;
-
       border-radius: 100%;
-
       background: $gradient-background-circle;
-
       font-size: $prime-font-score;
       font-weight: 700;
 
@@ -65,11 +55,10 @@
   & #summary {
     padding: 42px 58px;
 
-    @include flex("", "col");
+    @include flex("center&center", "col");
 
     & h1 {
       margin-bottom: 32px;
-
       color: $summary-color;
       font-size: $prime-font-size-h1;
       font-weight: 500;
@@ -77,32 +66,31 @@
 
     & ul {
       margin-bottom: 42px;
-
       list-style: none;
 
       & li {
         margin-bottom: 16px;
 
         &:last-child {
-          margin-bottom: 0px;
+          margin-bottom: 0;
         }
       }
     }
   }
 }
 
-#container {
-  @media screen and (max-width: $mobile) {
+@media screen and (max-width: $mobile) {
+  #container {
+    width: 100%;
+
     @include flex("", "col");
 
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-
     box-shadow: none;
 
     & #result {
       padding: 20px 30px;
-
       border-top-right-radius: 0;
       border-top-left-radius: 0;
 
@@ -113,7 +101,6 @@
       & h2 {
         font-size: $media-font-size-h2;
         font-weight: 600;
-
         margin-bottom: 14px;
       }
 
@@ -125,17 +112,15 @@
         width: 140px;
         height: 140px;
         margin-bottom: 32px;
-
         font-size: $media-font-score;
       }
     }
 
     & #summary {
-      padding: 30px 30px;
+      padding: 30px;
 
       & h1 {
         font-size: $media-font-size-h1;
-
         margin-bottom: 22px;
       }
 

@@ -1,0 +1,41 @@
+/**  Colors */
+$reaction-background-color: hsl(0deg 100% 67% / 5%);
+$memory-background-color: hsl(39deg 100% 56% / 5%);
+$verbal-background-color: hsl(166deg 100% 37% / 5%);
+$visual-background-color: hsl(234deg 85% 45% / 5%);
+$gradient-background: linear-gradient(
+  0deg,
+  rgb(46 43 233 / 100%) 0%,
+  rgb(120 87 255 / 100%) 100%
+);
+$gradient-background-circle: linear-gradient(
+  180deg,
+  hsl(256deg 72% 46% / 100%) 0%,
+  hsl(241deg 72% 46% / 0%) 100%
+);
+$prime-text-color: hsl(0deg 0% 100%);
+$second-text-color: hsl(241deg 100% 89%);
+$summary-color: hsl(224deg 30% 27%);
+$summary-opacity-color: hsl(224deg 30% 27% / 50%);
+$reaction-color: hsl(0deg 100% 67%);
+$memory-color: hsl(39deg 100% 56%);
+$verbal-color: hsl(166deg 100% 37%);
+$visual-color: hsl(234deg 85% 45%);
+
+/**  Font-sizes */
+
+$prime-font-size: 18px;
+$prime-font-size-h1: 24px;
+$prime-font-size-h2: 32px;
+$prime-font-score: 78px;
+$media-font-size-h1: 18px;
+$media-font-size-h2: 24px;
+$media-font-score: 54px;
+$media-font-paragraph: 16px;
+
+/**  Shadows */
+$prime-shadow: 10px 10px 20px 5px hsl(234deg 85% 45% / 5%);
+
+/**  Media */
+
+$mobile: 780px;
