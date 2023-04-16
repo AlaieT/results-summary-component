@@ -37,8 +37,10 @@ describe("ResultSummary", () => {
           ]}
         />
       );
-    });
 
-    expect(screen.getByText(`${Math.round((55 + 59 + 27 + 43) / 4)}`));
+      expect(
+        await screen.findByText(`${Math.round((55 + 59 + 27 + 43) / 4)}`)
+      ).toBeTruthy();
+    });
   });
 });
