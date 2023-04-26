@@ -10,7 +10,7 @@ const App = () => {
   const [pageProps, setPageProps] = useState<ResultSummaryProps | null>(null);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data.json`)
+    fetch(`${import.meta.env.BASE_URL}data/pagePropsResultSummaryComponent.json`)
       .then((response) => response.json())
       .then((data) => setPageProps(data));
   }, []);
