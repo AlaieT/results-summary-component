@@ -6,37 +6,37 @@ import Button from "../components/Button";
 afterEach(cleanup);
 
 describe("Button", () => {
-  const mockFunc = jest.fn((e) => e.preventDefault());
-
   describe("correct render", () => {
     it("should match snapshot", () => {
-      const { asFragment } = render(<Button />);
-
-      expect(asFragment()).toMatchSnapshot();
+      expect(render(<Button />).asFragment()).toMatchSnapshot();
     });
   });
 
   describe("correct functionality", () => {
-    it("should call function on click if type - button", async () => {
+    it("should call function on click if type - button", () => {
+      const mockFunc = jest.fn((e) => e.preventDefault());
+
       render(
         <Button type="button" onClick={mockFunc}>
           Click
         </Button>
       );
 
-      fireEvent.click(await screen.findByText("Click"));
+      fireEvent.click(screen.getByRole("button"));
 
       expect(mockFunc).toBeCalled();
     });
 
-    it("should submit form on click if type - submit", async () => {
+    it("should submit form on click if type - submit", () => {
+      const mockFunc = jest.fn((e) => e.preventDefault());
+
       render(
         <form onSubmit={mockFunc}>
           <Button type="submit">Submit</Button>
         </form>
       );
 
-      fireEvent.click(await screen.findByText("Submit"));
+      fireEvent.click(screen.getByRole("button"));
 
       expect(mockFunc).toBeCalled();
     });
