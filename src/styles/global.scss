@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./utils//mixins";
-@import "./utils/fonts";
 
 * {
   box-sizing: border-box;
@@ -12,7 +11,7 @@
 html {
   color: $prime-text-color;
   font-size: 18px;
-  font-family: HankenGrotesk, sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   font-weight: normal;
 }
 
